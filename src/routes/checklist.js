@@ -1,5 +1,6 @@
 const express = require("express");
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const { populate } = require("../models/checklist");
 const router = express.Router();
 const Checklist = require("../models/checklist");
 
@@ -55,7 +56,7 @@ router.post("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    let checklist = await Checklist.findById(req.params.id)
+    let checklist = await Checklist.findById(req.params.id).populate('tasks')
     res.status(200).render("checklist/show", { checklist: checklist });
   } catch (error) {
     console.log(error)

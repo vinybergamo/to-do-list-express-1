@@ -23,6 +23,7 @@ app.set("view engine", "ejs");
 app.use("/", rootRouter);
 app.use("/checklist", checklistRouter);
 app.use('/checklist', taskRouter.checklistDependent)
+app.use('/tasks', taskRouter.simple)
 
 app.listen(3000, () => {
   console.log("Servidor ativo!");

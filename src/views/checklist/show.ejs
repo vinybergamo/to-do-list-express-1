@@ -14,17 +14,17 @@
           </div>
         </div>
         <hr />
-        <% checklist.task.forEach(task => { %>
+        <% checklist.tasks.forEach(task => { %>
           <div class="columns">
             <div class="column is-four-fifths">
               <input type="checkbox" /> <%= task.name %>
             </div>
 
             <div class="column is-one-fifth">
-              <button class="button is-danger is-small">Remover</button>
+              <a href="/tasks/<%= task._id %>?method=delete" class="button is-danger is-small">Remover</a>
             </div>
           </div>
           <% }) %>
       </div>
-    </section>
+    </section> 
     <%- include('../layouts/footer') %>  
