@@ -1,9 +1,14 @@
 const express = require("express");
 const checklistRouter = require("./src/routes/checklist");
+const path = require("path");
+const taskRouter = require("./src/routes/task");
+
+
+
 const rootRouter = require("./src/routes/index");
+
 const methodOverride = require('method-override')
 require("./config/database");
-const path = require("path");
 
 const app = express();
 app.use(express.json());
@@ -17,7 +22,8 @@ app.set("view engine", "ejs");
 
 app.use("/", rootRouter);
 app.use("/checklist", checklistRouter);
+app.use('/checklist', taskRouter.checklistDependent)
 
 app.listen(3000, () => {
   console.log("Servidor ativo!");
-});
+}); 

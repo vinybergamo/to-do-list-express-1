@@ -1,4 +1,4 @@
-<%- include('../layouts/header', {tittle: 'Lista de tarefas' }) %>
+<%- include('../layouts/header', {title: 'Lista de tarefas' }) %>
   <%- include('../layouts/menu') %>
     <section class="section">
       <div class="container">
@@ -9,15 +9,15 @@
             </h1>
           </div>
           <div class="column is-one-fifth">
-            <a href="add-task.html" class="button is-success is-small">Nova Tarefa</a>
+            <a href="/checklist/<%= checklist._id%>/tasks/new" class="button is-success is-small">Nova Tarefa</a>
             <a href="/checklist" class="button is-small">Voltar</a>
           </div>
         </div>
         <hr />
-        <% checklist.task.forEach(task=> { %>
+        <% checklist.task.forEach(task => { %>
           <div class="columns">
             <div class="column is-four-fifths">
-              <input type="checkbox" /> Atividade 01
+              <input type="checkbox" /> <%= task.name %>
             </div>
 
             <div class="column is-one-fifth">
@@ -27,4 +27,4 @@
           <% }) %>
       </div>
     </section>
-    <%- include('../layouts/footer') %>
+    <%- include('../layouts/footer') %>  
