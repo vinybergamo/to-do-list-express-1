@@ -20,7 +20,7 @@ simpleRouter.delete('/:id', async (req, res) => {
         let checklist = await Checklist.findById(task.checklist)
         let taskToRemove = checklist.tasks.indexOf(task._id)
         checklist.tasks.slice(taskToRemove, 1)
-        chacklist.save()
+        checklist.save()
         res.redirect(`/checklist/${checklist._id}`)
     } catch (error) {
         res.status(422).render('pages/error', { errors: 'Erro ao excluir uma tarefa'})
