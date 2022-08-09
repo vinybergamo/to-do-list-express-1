@@ -17,5 +17,5 @@
 
 <section>
     <h2>Imagens do aplicativo</h2>
-    <img alt="tela home"src="../images/home.png" />
+    <img alt="tela home" src="./images/home.png" />
 </section>
