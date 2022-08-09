@@ -15,7 +15,7 @@
         </ul>
 </section>   
 
-<section>
+<section style="background: black">
     <h2>Imagens do aplicativo</h2>
     <img width="300px" alt="tela home" src="./images/home.png" />
     <img width="300px" alt="nova lista" src="./images/nova-lista.png" />
