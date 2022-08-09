@@ -1,5 +1,7 @@
 <h1>Bem vindo ao meu plicativo de criação de notas e tarefas, feito com NODE.js.</h1>
 
+[Link para o site na HEROKU](https://to-do-list-castro.herokuapp.com/)
+
 <section>
     <h2>Objetivo</h2>
         <p>Esse projeto tem como objetivo aplicar os conhecimnentos adquiridos nas aulas de node.js da OnebitCode.</p>
