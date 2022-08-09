@@ -28,6 +28,6 @@
 
 <section>
     <h2>O Aplicativo</h2>
-    <p>Nesse projeto, o proposito era fazer um aplicativo utilizando apenas o back-end, utilizando as ferramentas do express e integrando com o banco de dados MONGODB.</p>
+    <p>Nesse projeto, o proposito é fazer um aplicativo utilizando apenas o back-end, utilizando as ferramentas do express e integrando com o banco de dados MONGODB.</p>
     <p>O projeto se apoia em um CRUD(Create, Read, Update, Delete), com as rotas feitas em Express, e a API armazenada no banco de dados MONGODE Atlas.</p>
 </section>
