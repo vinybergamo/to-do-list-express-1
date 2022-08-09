@@ -1,4 +1,4 @@
-<h1>Bem vindo ao meu plicativo de criação de notas e tarefas, feito com NODE.js.</h1>
+<h1>Bem vindo ao meu aplicativo de criação de notas e tarefas, feito com NODE.js.</h1>
 
 [Link para o site na HEROKU](https://to-do-list-castro.herokuapp.com/)
 
