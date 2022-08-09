@@ -14,9 +14,9 @@
           </div>
         </div>
         <hr />
-        <%- checklist.tasks.forEach(task => { %>
+        <% checklist.tasks.forEach(task => { %>
           <div class="columns">
-            <div class="column is-four-fifths <%= task.done ? 'has-text-success is-italic : '' %> ">
+            <div class="column is-four-fifths <%= task.done ? 'has-text-success is-italic' : '' %> ">
               <input 
               type="checkbox" 
               onchange="setTagAsDone(this, '<%= task._id %>')" 

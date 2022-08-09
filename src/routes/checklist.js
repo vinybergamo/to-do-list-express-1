@@ -57,9 +57,9 @@ router.post("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     let checklist = await Checklist.findById(req.params.id).populate('tasks')
-    res.status(200).render("checklist/show", { checklist: checklist });
+    res.status(200).render("checklist/show", { checklist: checklist })
   } catch (error) {
-    console.log(error)
+    console.log(error)  
     res
       .status(500)
       .render("pages/error", { error: "Erro ao exibir a lista de tarefa" });
