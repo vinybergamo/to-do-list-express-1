@@ -15,7 +15,8 @@
         </ul>
 </section>   
 
-<section style="background: black">
+<kbd>
+<section>
     <h2>Imagens do aplicativo</h2>
     <img width="300px" alt="tela home" src="./images/home.png" />
     <img width="300px" alt="nova lista" src="./images/nova-lista.png" />
@@ -23,3 +24,4 @@
     <img width="300px" alt="lista com outras listas de tarefas" src="./images/lista-com-listas.png" />
     <img width="300px" alt="tela com as tarefas" src="./images/lista-tarefas.png" />
 </section>
+</kbd>
