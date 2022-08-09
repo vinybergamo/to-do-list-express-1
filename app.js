@@ -25,6 +25,6 @@ app.use("/checklist", checklistRouter);
 app.use('/checklist', taskRouter.checklistDependent)
 app.use('/tasks', taskRouter.simple)
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Servidor ativo!");    
 }); 
