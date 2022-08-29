@@ -45,7 +45,7 @@ router.post("/", async (req, res) => {
 
   try {
     await checklist.save();
-    res.redirect("/checklist");
+    res.status(200).json(checklist)
   } catch (error) {
     res
       .status(422)
